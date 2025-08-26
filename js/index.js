@@ -2,3 +2,5 @@
 
 //eksempel på at udskrive alle overskrifter i services i konsollen:
 services.forEach(service => console.log(service.headline))
+
+
