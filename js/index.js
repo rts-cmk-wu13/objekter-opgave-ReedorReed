@@ -12,12 +12,14 @@ const sitesSection = document.querySelector('.sites');
 const advantagesSection = document.querySelector('.advantages');
 const footerSection = document.querySelector('.footer');
 
-handleHero();
-handleServices();
-handleFacilities();
-handleSites();
-handleAdvantages();
-handleFooter();
+document.addEventListener('DOMContentLoaded', function () {
+	handleHero();
+	handleServices();
+	handleFacilities();
+	handleSites();
+	handleAdvantages();
+	handleFooter();
+});
 
 //Hero section
 
@@ -146,6 +148,7 @@ function handleFooter() {
     <h3 class="footer__title">${footer.title}</h3>
     </div>
     `;
+
 	const footerColumnsContent = footer.footerColumns
 		.map((column) => {
 			return /*html */ `
@@ -154,7 +157,7 @@ function handleFooter() {
         <ul class="footer__ul">
         ${column.links
 					.map((link) => {
-						return /*html */ `<li class="footer__li"><a href="#" class="footer__li-links">${link}<a/></li>`;
+						return /*html */ `<li class="footer__li"><a href="#" class="footer__li-links">${link}</a></li>`;
 					})
 					.join('')}
             
@@ -164,23 +167,18 @@ function handleFooter() {
 		})
 		.join('');
 
-	const footerBottomBar = footer.bottomBar
-		.map((bottomColumn) => {
-			return /*html */ `
+	const footerBottomBar = /*html */ `
         <div class="footer__bottomNav">
-        <p class="footer__copyright">${bottomColumn.copyright}</p>
+        <p class="footer__copyright">${footer.bottomBar.copyright}</p>
         <ul class="footer__bottomUl">
-        ${bottomColumn.links
+        ${footer.bottomBar.links
 					.map((link) => {
-						return /*html */ `<li class="footer__bottomLi"><a href="#" class="footer__bottomLi-links">${link}<a/></li>`;
+						return /*html */ `<li class="footer__bottomLi"><a href="#" class="footer__bottomLi-links">${link}</a></li>`;
 					})
 					.join('')}
-            
         </ul>
         </div>
         `;
-		})
-		.join('');
 
 	footerSection.insertAdjacentHTML(
 		'afterbegin',
