@@ -8,6 +8,9 @@ _________   _________ _________ .____                                __
  
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Base reset */
 
 /*Box-sizing*/
@@ -32,6 +35,132 @@ svg {
 	max-width: 100%;
 }
 
+a,
+li,
+ul {
+	text-decoration: none;
+}
+
+:root {
+	--main-color: #f78065;
+}
+
 /* -----------reset end------------ */
 
 
+
+
+/* ----------- Hero ------------ */
+
+.hero {
+	height: 120vh;
+	width: auto;
+}
+
+.hero__content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hero__img {
+	width: 100%;
+	height: auto;
+}
+
+.hero__textContent {
+	display: flex;
+	flex-direction: column;
+	transform: translate(6.5rem, -17rem);
+	background-color: #fff;
+	width: 741px;
+	height: 537px;
+	padding: 5rem 3rem 3rem 3rem;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero__heading {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 39px;
+	font-weight: 600;
+	padding: 0px 150px 0px 0px;
+	margin-bottom: 2rem;
+}
+
+.colored-text {
+	color: var(--main-color);
+}
+
+.hero__text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 0px 150px 0px 0px;
+	margin-bottom: 3rem;
+}
+
+.hero__btn {
+	background-color: var(--main-color);
+	color: #fff;
+	height: auto;
+	width: 200px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__btn-icon {
+	margin-right: 5px;
+	height: 24px;
+	width: 24px;
+}
+
+/* ----------- Services ------------ */
+
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.services__cards {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: auto;
+	margin: 0 1rem;
+}
+
+.services__img {
+	inline-size: 180px;
+	aspect-ratio: 1;
+	object-fit: cover;
+	margin: 3rem 0;
+}
+
+.services__cardText {
+	width: 350px;
+	padding: 5px 0;
+}
+
+.services__heading {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.services__text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.services__link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--main-color);
+}

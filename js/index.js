@@ -28,9 +28,12 @@ function handleHero() {
     <article class="hero__content">
         <img src="${hero.image}" class="hero__img">
         <div class="hero__textContent">
-            <h2 class="hero__heading">${hero.headline}</h2>
+            <h2 class="hero__heading">${hero.headline.replace(
+							'save your time',
+							`<span class="colored-text">save your time</span>`
+						)}</h2>
             <p class="hero__text">${hero.copy}</p>
-            <a href="#" class="hero__btn"><img src="${hero.icon}">Explore</a>
+            <a href="#" class="hero__btn"><img src="${hero.icon}" class="hero__btn-icon">Explore</a>
         </div>
     </article>
     `;
