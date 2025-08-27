@@ -33,7 +33,9 @@ function handleHero() {
 							`<span class="colored-text">save your time</span>`
 						)}</h2>
             <p class="hero__text">${hero.copy}</p>
-            <a href="#" class="hero__btn"><img src="${hero.icon}" class="hero__btn-icon">Explore</a>
+            <a href="#" class="hero__btn"><img src="${
+							hero.icon
+						}" class="hero__btn-icon">Explore</a>
         </div>
     </article>
     `;
@@ -71,14 +73,14 @@ function handleFacilities() {
 	const facilitiesCardContent = facilities.options
 		.map((facility) => {
 			return /*html */ `
-        <article class="facilities__CardContent">
-    <div class="facilities__textContent">
-            <img src="${facility.icon}" class="facilities__icon">
-            <h2 class="facilities__cardHeadline">${facility.headline}</h2>
-            <p class="facilities__cardText">${facility.text}</p>
-            <a href="#" class="facilities__link">Show me more</a>
-        </div>
-    </article>
+        <article class="facilities__Card">
+            <div class="facilities__CardContent">
+                <img src="${facility.icon}" class="facilities__icon">
+                <h2 class="facilities__cardHeadline">${facility.headline}</h2>
+                <p class="facilities__cardText">${facility.text}</p>
+                <a href="#" class="facilities__link">Show me more</a>
+             </div>
+        </article>
     `;
 		})
 		.join('');
