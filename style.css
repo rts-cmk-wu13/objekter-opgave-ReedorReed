@@ -39,6 +39,7 @@ a,
 li,
 ul {
 	text-decoration: none;
+	list-style: none;
 }
 
 :root {
@@ -231,3 +232,168 @@ ul {
 	margin-top: auto;
 	color: var(--main-color);
 }
+
+/* ----------- Sites ------------ */
+
+.sites {
+	margin-right: auto;
+	margin-left: auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 30px;
+	align-items: stretch;
+	width: 85%;
+	margin-bottom: 15rem;
+}
+
+.sites__header {
+	width: 60%;
+	grid-column: 1/3;
+}
+
+.sites__heading {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.sites__headingText {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 4rem;
+}
+
+.sites__btn {
+	background-color: var(--main-color);
+	color: #fff;
+	height: 65px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sites__btn-icon {
+	margin-right: 5px;
+	height: 24px;
+	width: 24px;
+}
+
+.sites__Card {
+	background-color: #fff;
+	width: 100%;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.sites__CardContent {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	height: 100%;
+}
+
+.sites__icon {
+	inline-size: 230px;
+	aspect-ratio: 0.5;
+	object-fit: cover;
+	margin-bottom: 2rem;
+}
+
+.sites__cardHeadline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.sites__cardText {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 0.5rem;
+}
+
+.sites__link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	margin-top: auto;
+	color: var(--main-color);
+}
+
+
+/* ----------- Advantages ------------ */
+
+.advantages {
+	margin-right: auto;
+	margin-left: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	align-items: stretch;
+	width: 85%;
+	margin-bottom: 17rem;
+}
+
+.advantages__heading {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 10rem;
+	grid-column: 1/5;
+	margin-bottom: 4rem;
+}
+
+.advantages__Card {
+	background-color: #fff;
+	width: 90%;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.advantages__CardContent {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.advantages__icon {
+	inline-size: 32px;
+	aspect-ratio: 1;
+	object-fit: cover;
+	margin-bottom: 4rem;
+}
+
+.advantages__cardHeadline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+.advantages__cardText {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	margin-top: auto;
+}
+
+/* ----------- Footer ------------ */
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	width: 100%;
+	margin-bottom: 4rem;
+	background-color: #F7F7F7;
+}
+

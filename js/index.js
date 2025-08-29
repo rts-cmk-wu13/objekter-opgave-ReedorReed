@@ -95,9 +95,11 @@ function handleFacilities() {
 
 function handleSites() {
 	const sitesContent = /*html */ `
+    <div class="sites__header">
     <h2 class="sites__heading">${sites.headline}</h2>
     <p class="sites__headingText">${sites.text}</p>
-    <a href="#" class="sites__btn"><img src="${sites.btnicon}">Start</a>
+    <a href="#" class="sites__btn"><img src="${sites.btnicon}" class="sites__btn-icon">Start</a>
+    </div>
     `;
 	const sitesCardContent = sites.places
 		.map((place) => {
@@ -129,10 +131,12 @@ function handleAdvantages() {
 	const advantagesCardContent = advantages
 		.map((advantage) => {
 			return /*html */ `
-        <article class="advantages__CardContent">
+        <article class="advantages__Card">
+        <div class="advantages__CardContent">
             <img src="${advantage.icon}" class="advantages__icon">
             <h2 class="advantages__cardHeadline">${advantage.headline}</h2>
             <p class="advantages__cardText">${advantage.text}</p>
+            </div>
     </article>
     `;
 		})
